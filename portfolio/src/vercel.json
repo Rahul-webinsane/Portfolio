@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "angular-app/",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/angular-app/$1"
+      }
+    ]
+  }
+  
